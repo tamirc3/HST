@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HST", "HST\HST.csproj", "{1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HST.Tests", "HST.Tests\HST.Tests.csproj", "{F51B7240-87BA-4DBE-9ABE-07C38A817A46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{2EC31744-3741-4B2D-82AF-3270970E91D4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,10 +20,6 @@ Global
 		{F51B7240-87BA-4DBE-9ABE-07C38A817A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F51B7240-87BA-4DBE-9ABE-07C38A817A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F51B7240-87BA-4DBE-9ABE-07C38A817A46}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2EC31744-3741-4B2D-82AF-3270970E91D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EC31744-3741-4B2D-82AF-3270970E91D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EC31744-3741-4B2D-82AF-3270970E91D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2EC31744-3741-4B2D-82AF-3270970E91D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
