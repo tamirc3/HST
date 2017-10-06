@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Administrator";
+}
+
+<h2>Administrator</h2>
+@using HST.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>welcome administraotr</h2>
+
+@using (Html.BeginForm("", ""))//Html.BeginForm("methodName", "ControllerName"
+{
+    <h2>add new user</h2>
+
+    <H3>new user name:</H3>
+    <input type="text" id="userName"  value="agentFoo" />
+    <br />
+    <H3>new user name password:</H3>
+    <input type="text" id="password" value="1234" />
+    <H3>new user role:</H3>
+    <select id="userType"  >
+        <option value="@UserType.Administrator">@UserType.Administrator</option>
+        <option value="@UserType.Agent">@UserType.Agent</option>
+        <option value="@UserType.Manager">@UserType.Manager</option>
+    </select>
+    <input id="submit" type="button" onclick="AddUser()" value="submit"/>
+}
+
+<script src="../../HST scripts/UsersAdmin.js"></script>
