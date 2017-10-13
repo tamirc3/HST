@@ -10,14 +10,15 @@ namespace HST.Controllers
         // GET: HSTHome
         public ActionResult Index()
         {
-            HttpCookie userInfoCookie = new HttpCookie(CookieConsts.UserInfo)
-            {
-                Value = "SDgsdgsg",
-                Path = "/",
-                Secure = false,
-                Domain = "dev.livesite.com"
-            };
+            HttpCookie userInfoCookie = new HttpCookie("cookie","cookie value");
+            userInfoCookie.Path = "/";
+       
+            userInfoCookie.Secure = false;
+            userInfoCookie.HttpOnly = true;
+            userInfoCookie.Shareable = true;
             Request.Cookies.Add(userInfoCookie);
+            Response.SetCookie(userInfoCookie);
+
             return View();
         }
 
