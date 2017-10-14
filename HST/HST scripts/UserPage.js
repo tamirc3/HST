@@ -9,7 +9,7 @@ function GetPageInfo() {
             CreateTasksTable(data);
         },
         error: function () {
-            alert("unable to get page metaData");
+            alert("unable to get all taks for user");
         }
     });
 }

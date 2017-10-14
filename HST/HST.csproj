@@ -152,7 +152,7 @@
     <Compile Include="Models\LoginRequest.cs" />
     <Compile Include="Models\USER_Consts.cs" />
     <Compile Include="Models\DbManager.cs" />
-    <Compile Include="Models\InterFaces.cs" />
+    <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\Task.cs" />
     <Compile Include="Models\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
