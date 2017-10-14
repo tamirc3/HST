@@ -1,7 +1,4 @@
-﻿using System;
-using System.Web;
-using System.Web.Mvc;
-using HST.Models;
+﻿using System.Web.Mvc;
 
 namespace HST.Controllers
 {
@@ -10,15 +7,6 @@ namespace HST.Controllers
         // GET: HSTHome
         public ActionResult Index()
         {
-            HttpCookie userInfoCookie = new HttpCookie("cookie","cookie value");
-            userInfoCookie.Path = "/";
-       
-            userInfoCookie.Secure = false;
-            userInfoCookie.HttpOnly = true;
-            userInfoCookie.Shareable = true;
-            Request.Cookies.Add(userInfoCookie);
-            Response.SetCookie(userInfoCookie);
-
             return View();
         }
 

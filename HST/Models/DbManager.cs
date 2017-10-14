@@ -44,7 +44,7 @@ namespace HST.Models
             {
                 Id = 0,
                 UserName = "u",
-                UserType = UserType.Agent,
+                UserType = UserType.User,
                 Password = "1234"
             };
             var m = new UserInfo()

@@ -6,7 +6,7 @@
     }
     public enum UserType
     {
-        Agent,Administrator,Manager,NotExist
+        User,Administrator,Manager,NotExist
     }
 
 

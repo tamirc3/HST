@@ -16,7 +16,7 @@ namespace HST.Tests.bussnesLogic
             string userName = "agentFoo";
             string password = "1234";
             var userInfo = dbManager.Login(userName, password);
-            Assert.IsTrue(userInfo.UserType.Equals(UserType.Agent));
+            Assert.IsTrue(userInfo.UserType.Equals(UserType.User));
         }
         [TestMethod]
         public void LoginTest_InValidLogin()
@@ -50,14 +50,14 @@ namespace HST.Tests.bussnesLogic
             var userInfro = new UserInfo()
             {
                 UserName = userName,
-                UserType = UserType.Agent,
+                UserType = UserType.User,
                 Id = 0,
                 Password = Password
             };
 
-            dbManager.AddUser(userName,Password, UserType.Agent);
+            dbManager.AddUser(userName,Password, UserType.User);
             var userInfo = dbManager.Login(userName, Password);
-            Assert.IsTrue(userInfo.UserType == UserType.Agent);
+            Assert.IsTrue(userInfo.UserType == UserType.User);
         }
 
 

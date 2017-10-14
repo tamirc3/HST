@@ -29,6 +29,6 @@ namespace HST
         
             DbManager = new DbManager();
         }
-        public static readonly Dictionary<UserType,HttpCookie> CookiesDictionary = new Dictionary<UserType, HttpCookie>();
+       // public static readonly Dictionary<UserType,HttpCookie> CookiesDictionary = new Dictionary<UserType, HttpCookie>();
     }
 }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Data;
 using System.Web.Mvc;
 using HST.Models;
-using Newtonsoft.Json;
 
 namespace HST.Controllers
 {
@@ -16,9 +12,9 @@ namespace HST.Controllers
             var cookie = Request.Cookies.Get(CookieConsts.UserInfo);
             if (cookie == null)
             {
-               // return null;
+              throw new DataException("cookie is null");
             }
-            var userName = AppManager.CookiesDictionary[UserType.Agent].Value;
+            var userName = cookie.Value;
             return Json(AppManager.DbManager.GetAllTasksForUser(userName));
          //   return JsonConvert.SerializeObject(AppManager.DbManager.GetAllTasksForUser(userName));
         }
